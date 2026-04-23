@@ -1,0 +1,59 @@
+:root {
+  color-scheme: dark;
+  --bg: #0a0c16;
+  --panel: #14192e;
+  --text: #ecf0ff;
+  --accent: #7f91ff;
+  --danger: #ff6584;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 20% 20%, #202449 0%, var(--bg) 60%);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+}
+
+.layout {
+  width: min(980px, 95vw);
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+}
+
+.hint {
+  opacity: 0.85;
+  margin: 0 0 0.75rem;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border: 2px solid #2f3866;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #10152b 0%, #0a1021 100%);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.hud {
+  margin-top: 0.6rem;
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+}
+
+#hudStats,
+#hudSpells {
+  padding: 0.5rem 0.75rem;
+  background: rgba(20, 25, 46, 0.8);
+  border: 1px solid rgba(127, 145, 255, 0.35);
+  border-radius: 8px;
+}
